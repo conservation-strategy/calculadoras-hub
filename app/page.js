@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Navbar from "./components/navbar/navbar";
 import Calculators from "./components/calculators/calculators";
 import Footer from "./components/footer/footer";
+import MidSection from "./components/midsection/midsection";
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
         <Calculators/>
       {/* </div> */}
       <div className={styles.divider}></div>
+      <MidSection/>
       <Footer/>
     </main>
     );
