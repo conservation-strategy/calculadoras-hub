@@ -1,3 +1,5 @@
+/*  FLUID RESPONSIVENESS: 744 -> 1440px*/
+
 .calculators {
     width: 100%;
     height: 100%;
@@ -6,37 +8,28 @@
     display: flex;
     justify-content: center;
     padding: 24px;
-    gap: 24px;
+    gap: clamp(0.5625rem, -0.8405rem + 3.0172vw, 1.875rem); /* 9 -> 30px */
 }
 
-
-/* responsive fluido 1440 -> 1024
-padding-block: 80 -> 48px
-padding-inline: 48 -> 32px
-gap: 40 -> 24px
-font-size
-    title: 30 -> 28
-    desc: 22 -> 18
-*/
 .calculatorButton {
     /* aspect-ratio: 395 / 738; */
     width: 33%;
     max-width: 395px;
-    padding: 80px 48px;
+    /* padding: 36 -> 80px  24 -> 48px*/
+    padding: clamp(2.25rem, -0.6897rem + 6.3218vw, 5rem) clamp(1.5rem, -0.1034rem + 3.4483vw, 3rem);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    gap: 39px;
+    gap: clamp(0.875rem, -0.8621rem + 3.7356vw, 2.5rem); /* 14 -> 36px*/
     margin: 2px;
-    transition: all 25ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 .calculatorButton:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.025) translateY(-1.5%); */
+    transform: translateY(-2.5%);
+    /* transform: scale(1.025); */
 }
-/* .calculatorButton:active {
-    transform: scale(0.95);
-} */
+
 .deforestation {
     background-color: var(--darkgreen);
     background-image: url('/assets/fundo_desmatamento.png');
@@ -49,10 +42,6 @@ font-size
     background-color: var(--darkred);
     background-image: url('/assets/fundo_indígena.png');
 }
-/* .indigenous,
-.deforestation {
-    transition: all 0.5s ease-in-out;
-} */
 .deforestation:hover,
 .indigenous:hover,
 .mining:hover{
@@ -80,17 +69,20 @@ font-size
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0px 16px;
+    padding: 0px clamp(0.3125rem, -0.3556rem + 1.4368vw, 0.9375rem); /* 5-> 15px*/
     gap: 4px;
     color: #ffffff;
     text-align: left;
 }
-
+/* responsive fluido 1440 -> 744
+    font-size
+        title: 30 -> 22
+        desc: 22 -> 14
+*/
 .title {
-    font-size: 30px;
+    font-size: clamp(1.375rem, 0.8405rem + 1.1494vw, 1.875rem);
     text-transform: capitalize;
 }
-
 .description {
-    font-size: 22px;
+    font-size:  clamp(0.875rem, 0.3405rem + 1.1494vw, 1.375rem);
 }
