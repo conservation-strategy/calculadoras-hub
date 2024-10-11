@@ -10,8 +10,8 @@ export default function Navbar () {
                 <Image
                 src={'/assets/logo.svg'}
                 alt='logo CSF'
-                width={80}
-                height={80}
+                width={64}
+                height={64}
                 />
             </a>
             <div className={styles.languageSelector}>
