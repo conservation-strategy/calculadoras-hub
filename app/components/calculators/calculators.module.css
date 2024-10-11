@@ -9,6 +9,15 @@
     gap: 24px;
 }
 
+
+/* responsive fluido 1440 -> 1024
+padding-block: 80 -> 48px
+padding-inline: 48 -> 32px
+gap: 40 -> 24px
+font-size
+    title: 30 -> 28
+    desc: 22 -> 18
+*/
 .calculatorButton {
     /* aspect-ratio: 395 / 738; */
     width: 33%;
@@ -20,7 +29,14 @@
     /* justify-content: center; */
     gap: 39px;
     margin: 2px;
+    transition: all 25ms ease-in-out;
 }
+.calculatorButton:hover {
+    transform: scale(1.05);
+}
+/* .calculatorButton:active {
+    transform: scale(0.95);
+} */
 .deforestation {
     background-color: var(--darkgreen);
     background-image: url('/assets/fundo_desmatamento.png');
