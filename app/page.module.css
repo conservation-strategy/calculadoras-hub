@@ -7,7 +7,8 @@
   background-color: var(--background);
   color: var(--foreground);
   background-image: url('/assets/fundo.png');
-  background-size: 3730px 2798px;
+  /* background-size: 3730px 2798px; */
+  background-size: cover;
   background-position: center top;
   font-size: 20px;
 }
