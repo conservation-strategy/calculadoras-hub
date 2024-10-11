@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/navbar";
 import Calculators from "./components/calculators/calculators";
 import Footer from "./components/footer/footer";
 import MidSection from "./components/midsection/midsection";
+import Quotes from "./components/quotes/quotes";
 
 export default function Home() {
 
@@ -15,7 +16,8 @@ export default function Home() {
       {/* </div> */}
       <div className={styles.divider}></div>
       <MidSection/>
-      <Footer/>
+      <Quotes/>
+      <Footer/>      
     </main>
     );
 }
