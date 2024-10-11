@@ -50,6 +50,14 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+  border: none;
+  transition: all 250ms ease-in-out;
+}
+button:hover {
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
 }
 
 
