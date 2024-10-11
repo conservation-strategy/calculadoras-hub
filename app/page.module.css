@@ -10,6 +10,12 @@
   background-size: 3730px 2798px;
   background-position: center top;
 }
+.hero {
+  width: 100%;
+  height: calc(100vh - 132px); /* tela - altura do navbar */
+  display: flex;
+  justify-content: center;
+}
 
 .divider {
   height: 2px;

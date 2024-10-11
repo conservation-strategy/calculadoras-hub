@@ -1,0 +1,80 @@
+.calculators {
+    width: 100%;
+    height: 100%;
+    max-height: calc(738px + 48px + 4px);
+    max-width: var(--max-width-content);
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.calculatorButton {
+    /* aspect-ratio: 395 / 738; */
+    width: 33%;
+    max-width: 395px;
+    padding: 80px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 39px;
+    margin: 2px;
+}
+.deforestation {
+    background-color: var(--darkgreen);
+    background-image: url('/assets/fundo_desmatamento.png');
+}
+.mining {
+    background-color: var(--darkgold);
+    background-image: url('/assets/fundo_mineração.png');
+}
+.indigenous {
+    background-color: var(--darkred);
+    background-image: url('/assets/fundo_indígena.png');
+}
+/* .indigenous,
+.deforestation {
+    transition: all 0.5s ease-in-out;
+} */
+.deforestation:hover,
+.indigenous:hover,
+.mining:hover{
+    background-image: none;
+}
+.indigenousIcon{
+    width: 58.25%;
+}
+.miningIcon {
+    width: 45.45%;
+}
+.deforestationIcon {
+    width: 55.89%;
+}
+.circle {
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 16px;
+    gap: 4px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.title {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.description {
+    font-size: 22px;
+}
