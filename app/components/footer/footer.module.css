@@ -1,0 +1,49 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    margin-block: 24px;
+}
+.link {
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-block: 14px;
+}
+.socials > a {
+    opacity: 0.6
+}
+.socials > a:hover {
+    opacity: 1
+}
+
+@media(max-width: 1024px) {
+    .socials > a {
+        opacity: 1
+    }
+}
+
+.footnote {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin-block: 6px;
+}

@@ -9,6 +9,7 @@
   background-image: url('/assets/fundo.png');
   background-size: 3730px 2798px;
   background-position: center top;
+  font-size: 20px;
 }
 .hero {
   width: 100%;
