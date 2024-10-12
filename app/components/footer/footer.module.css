@@ -5,7 +5,8 @@
     gap: 24px;
     align-items: center;
     text-align: center;
-    margin-block: 24px;
+    margin-top: 64px;
+    margin-bottom: 24px;
 }
 .link {
     text-decoration: none;
