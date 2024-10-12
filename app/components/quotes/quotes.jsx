@@ -41,7 +41,7 @@ const Slide = () => {
                 <div className={styles.quote}>
                     The mining impacts calculator allows a simple, fast and effective damage identification, establishing precise criteria and individualizing each valuation criterion, making the Public Prosecutor's Office's reparation claims even more fair and technically sound.
                 </div>
-                <div className={styles.author}>
+                <div className={`${styles.author} ${droid_sans_bold.className}`}>
                     Gustavo Kenner,
                     <br/>
                     Federal Prosecutor (Brazil)
