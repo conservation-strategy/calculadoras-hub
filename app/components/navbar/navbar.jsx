@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import styles from './navbar.module.css';
 import { doppio_one } from '@/app/fonts';
+import LanguageSelect from '../language-select/language-select';
 
 export default function Navbar () {
 
     return (
-        <div className={`${styles.navbar} ${doppio_one.className}`}>
+        <div className={`${styles.navbar}`}>
             <a>
                 <Image
                 src={'/assets/logo.svg'}
@@ -14,7 +15,8 @@ export default function Navbar () {
                 height={64}
                 />
             </a>
-            <div className={styles.languageSelector}>
+            <LanguageSelect/>
+            {/* <div className={styles.languageSelector}>
                 EN
                 <Image
                 src={'/keyboard_arrow_down.svg'}
@@ -22,7 +24,7 @@ export default function Navbar () {
                 width={30}
                 height={30}
                 />
-            </div>
+            </div> */}
         </div>
     )
 }
