@@ -12,7 +12,11 @@ export default function Footer () {
             <Socials/>            
             <div>
                 {footer.about}{' '}
-                <a style={{ textDecoration: 'underline' }}>
+                <a style={{ textDecoration: 'underline' }}
+                href='https://www.conservation-strategy.org/'
+                target='_blank'
+                rel='noopener noreferrer'
+                >
                     {footer.link}
                 </a>
             </div>
@@ -34,7 +38,11 @@ const Socials = () => {
 
     return (
         <div className={styles.socials}>
-                <a>
+                <a 
+                href='https://www.linkedin.com/company/conservationstrategyfund/ '
+                target='_blank'
+                rel='noopener noreferrer'
+                >
                     <Image
                     src={'/IN-icon.svg'}
                     alt='IN icon'
@@ -42,7 +50,11 @@ const Socials = () => {
                     height={38}
                     />
                 </a>
-                <a>
+                <a
+                href='https://www.youtube.com/user/numbers4nature'
+                target='_blank'
+                rel='noopnener noreferrer'
+                >
                     <Image
                     src={'/YT-icon.svg'}
                     alt='YT icon'
@@ -50,7 +62,11 @@ const Socials = () => {
                     height={38}
                     />
                 </a>
-                <a>
+                <a
+                href=' https://www.instagram.com/conservationstrategyfund/'
+                target='_blank'
+                rel='noopener noreferrer'
+                >
                     <Image
                     src={'/IG-icon.svg'}
                     alt='IG icon'
@@ -58,7 +74,11 @@ const Socials = () => {
                     height={38}
                     />
                 </a>
-                <a>
+                <a
+                href='https://twitter.com/numbers4nature'
+                target='_blank'
+                rel='noopener noreferrer'
+                >
                     <Image
                     src={'/X-icon.svg'}
                     alt='X icon'
@@ -66,7 +86,11 @@ const Socials = () => {
                     height={38}
                     />
                 </a>
-                <a>
+                <a
+                href='https://www.facebook.com/conservationstrategyfund'
+                target='_blank'
+                rel='noopener noreferrer'
+                >
                     <Image
                     src={'/fb-icon.svg'}
                     alt='fb icon'

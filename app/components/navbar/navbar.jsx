@@ -7,7 +7,11 @@ export default function Navbar () {
 
     return (
         <div className={`${styles.navbar}`}>
-            <a>
+            <a
+            href='https://www.conservation-strategy.org/'
+            target='_blank'
+            rel='noopener noreferrer'
+            >
                 <Image
                 src={'/assets/logo.svg'}
                 alt='logo CSF'
