@@ -26,10 +26,10 @@ export default function MidSection () {
                     <div className={styles.phoneDisplay}>
                         <div className={styles.circlePhone}></div>
                         <Image
-                        src={'/assets/celular_novo.png'}
+                        src={'/assets/celular.png'}
                         alt='smart phone'
-                        width={248}
-                        height={442}
+                        width={561}
+                        height={1000}
                         className={styles.phoneImg}
                         quality={100}
                         priority
