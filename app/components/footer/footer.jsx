@@ -69,14 +69,6 @@ const Socials = () => {
                     height={38}
                     />
                 </a>
-                <a>
-                    <Image
-                    src={'/IN-icon.svg'}
-                    alt='IN icon'
-                    width={38}
-                    height={38}
-                    />
-                </a>
             </div>
     )
 }
