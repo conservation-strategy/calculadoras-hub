@@ -25,8 +25,11 @@ export default function MidSection () {
                         src={'/assets/celular_novo.png'}
                         alt='smart phone'
                         width={248}
-                        height={422}
+                        height={442}
                         className={styles.phoneImg}
+                        quality={100}
+                        priority
+                        objectFit='contain'
                         />
                     </div>
                     <div className={styles.tabletDisplay}>
