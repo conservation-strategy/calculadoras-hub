@@ -1,5 +1,6 @@
 import "./globals.css";
 import { gudea } from "./fonts";
+import { AppProvider } from "./context/provider";
 
 export const metadata = {
   title: "Calculator Hub",
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={gudea.className}>
-        {children}
+        <AppProvider>
+          {children}
+        </AppProvider>
       </body>
     </html>
   );

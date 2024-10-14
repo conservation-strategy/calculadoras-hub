@@ -1,0 +1,164 @@
+[
+    {
+        "id": "en",
+        "calculators": {
+            "mining": {
+                "title": "mining impacts calculator",
+                "description": "Estimates the costs of the social and environmental damages caused by small-scale gold mining."
+            },
+            "indigenous": {
+                "title": "indigenous management cost calculator",
+                "description": "Estimates the costs of implementing Indigenous territorial management plans."
+            },
+            "deforestation": {
+                "title": "deforestation impacts calculator",
+                "description": "Estimates the costs of the social and environmental damages caused by deforestation in the Amazon."
+            }
+        },
+        "midsection" : {
+            "title": "open access",
+            "heading": "Tools to support decision-making",
+            "subHeading": "Empowering stakeholders with data-driven valuation insights"
+        },
+        "quotes": {
+            "main": {
+                "quote": "CSF's online tools empower decision-makers with user-friendly information on the costs and benefits of human interactions with the environment, turning months of work into instant insights for more effective planning and fundraising, and calculation of environmental fines.",
+                "author": "Pedro Gasparinetti, CSF Innovation Director"
+            },
+            "cards": [
+                {
+                    "quote": "The Mining Impacts Calculator allows a simple, fast and effective damage identification, establishing precise criteria and individualizing each valuation criterion, making the Public Prosecutor's Office's reparation claims even more fair and technically sound.",
+                    "author": "Gustavo Kenner",
+                    "position": "Federal Prosecutor (Brazil)"
+                },
+                {
+                    "quote": "Xingu's protected areas are a valuable socio-environmental heritage and are increasingly under threat. Managing these areas is complex, and the Indigenous Management Cost Calculator is the first tool to present the real minimum costs for their protection.",
+                    "author": "André Villas Bôas",
+                    "position": "ISA/Rede Xingu+"
+                },
+                {
+                    "quote": "The Deforestation Impacts Calculator helps us to thoroughly assess deforestation's impacts, providing IBAMA (Brazilian Environmental Protection Agency | Federal Authority), a solid foundation for administrative processes and civil actions.",
+                    "author": "Raquel Alves",
+                    "position": "IBAMA's Environmental Restoration Coordinator"
+                }
+            ]
+        },
+        "footer": {
+            "about": "About CSF",
+            "link": "here",
+            "contact": "contact",
+            "footnote": [
+                "CSF is not responsible for the consequences of using the calculators.",
+                "Copyright ©️ 2024 CSF All rights reserved."
+            ]
+        }
+    },
+    {
+        "id": "es",
+        "calculators": {
+            "mining": {
+                "title": "Calculadora de Impactos de la Minería de Oro",
+                "description": "Valoración de los daños sociales y ambientales ocasionados por la minería aurífera de pequeña escala en la Amazonía."
+            },
+            "indigenous": {
+                "title": "Calculadora de Costos de Gestión de Territorios Indígenas",
+                "description": "Estimates the costs of implementing Indigenous territorial management plans."
+            },
+            "deforestation": {
+                "title": "Calculadora de Impactos de la Deforestación",
+                "description": "Valoración de los daños sociales y ambientales ocasionados por la deforestación en la Amazonía."
+            }
+        },
+        "midsection" : {
+            "title": "libre acceso",
+            "heading": "Herramientas para la toma de decisiones",
+            "subHeading": "Empoderando a actores clave con perspectivas de valoración basadas en datos"
+        },
+        "quotes": {
+            "main": {
+                "quote": "Las herramientas en línea desarrolladas por CSF capacitan a los tomadores de decisiones con información accesible sobre los costos y beneficios de las interacciones humanas con el medio ambiente, transformando meses de trabajo en perspectivas instantáneas para una planificación y captación de recursos más eficaz, además del cálculo de multas a quienes provocan daños al medio ambiente.",
+                "author": "Pedro Gasparinetti, Director de Innovación CSF"
+            },
+            "cards": [
+                {
+                    "quote": "La Calculadora de Impactos de la Minería de Oro permite identificar los daños de manera simple, rápida y eficaz, estableciendo criterios de valoración precisos e individualizando cada uno de ellos, lo que hace que las demandas de reparación de daños del Ministerio Público sean aún más justas y técnicamente fundamentadas.",
+                    "author": "Gustavo Kenner",
+                    "position": "Procurador de la República (Brasil)"
+                },
+                {
+                    "quote": "Las áreas protegidas del territorio indígena Xingú son un patrimonio socioambiental valioso y están cada vez más amenazadas. La gestión de estas áreas es compleja y la Calculadora de Costos de Gestión Indígena es la primera herramienta que presenta los costos mínimos reales para su protección.",
+                    "author": "André Villas Bôas",
+                    "position": "Instituto Socio Ambiental/Red Xingu+"
+                },
+                {
+                    "quote": "La Calculadora de Impactos de la Deforestación nos ayuda a evaluar minuciosamente los impactos causados por la deforestación, ofreciendo al Instituto Brasilero de Medio Ambiente y Recursos Naturales (IBAMA | Autoridad Federal) una base sólida para implementar procesos administrativos y acciones civiles públicas.",
+                    "author": "Raquel Alves",
+                    "position": "Coordinadora de Recuperación Ambiental, IBAMA"
+                }
+            ]
+        },
+        "footer": {
+            "about": "Acerca de Conservación Estratégica - CSF",
+            "link": "aquí",
+            "contact": "contacto",
+            "footnote": [
+                "Conservación Estratégica (CSF) no se responsabiliza de las consecuencias del uso de las calculadoras.",
+                "Copyright ©️ 2024 CSF Todos los derechos reservados."
+            ]
+        }
+    },
+    {
+        "id": "pt",
+        "calculators": {
+            "mining": {
+                "title": "Calculadora de Impactos do Garimpo",
+                "description": "Valoração dos danos sociais e ambientais causados pela mineração de ouro em pequena escala."
+            },
+            "indigenous": {
+                "title": "Calculadora de Custos de Gestão Indígena",
+                "description": "Previsão de custos para o planejamento orçamentário dos planos de gestão territorial indígena."
+            },
+            "deforestation": {
+                "title": "Calculadora de Impactos do Desmatamento",
+                "description": "Valoração dos danos sociais e ambientais causados pelo desmatamento na Amazônia."
+            }
+        },
+        "midsection" : {
+            "title": "acesso gratuito",
+            "heading": "Ferramentas para tomada de decisão",
+            "subHeading": "Empoderando stakeholders com insights de valoração baseados em dados"
+        },
+        "quotes": {
+            "main": {
+                "quote": "As ferramentas online da CSF capacitam tomadores de decisão com informações acessíveis sobre os custos e benefícios das interações humanas com o meio ambiente, transformando meses de trabalho em insights instantâneos para um planejamento e captação de recursos mais eficazes, além do cálculo de multas ambientais.",
+                "author": "Pedro Gasparinetti, Diretor de Inovação CSF"
+            },
+            "cards": [
+                {
+                    "quote": "A Calculadora de Impactos do Garimpo permite uma identificação de danos simples, rápida e eficaz, estabelecendo critérios precisos e individualizando cada critério de valoração, tornando as reivindicações de reparação do Ministério Público ainda mais justas e tecnicamente embasadas.",
+                    "author": "Gustavo Kenner",
+                    "position": "Procurador da República"
+                },
+                {
+                    "quote": "As áreas protegidas do Xingu são um valioso patrimônio socioambiental e estão cada vez mais ameaçadas. A gestão destas áreas é complexa, e a Calculadora de Custos de Gestão Indígena é a primeira ferramenta a apresentar os custos mínimos reais para a sua proteção.",
+                    "author": "André Villas Bôas",
+                    "position": "ISA/Rede Xingu+"
+                },
+                {
+                    "quote": "A Calculadora de Impactos do Desmatamento nos ajuda a avaliar minuciosamente os impactos do desmatamento, fornecendo ao Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA) uma base sólida para processos administrativos e ações civis públicas.",
+                    "author": "Raquel Alves",
+                    "position": "Coordenadora de Recuperação Ambiental, IBAMA"
+                }
+            ]
+        },
+        "footer": {
+            "about": "Sobre a CSF",
+            "link": "aqui",
+            "contact": "contato:",
+            "footnote": [
+                "A CSF não se responsabiliza pelas consequências do uso das calculadoras.",
+                "Copyright ©️ 2024 CSF Todos os direitos reservados."
+            ]
+        }
+    }
+]
