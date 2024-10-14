@@ -49,6 +49,10 @@
     /* transform: scale(0); */
     max-height: 0;
 }
+.button,
+.option {
+    text-transform: capitalize;
+}
 .option {
     padding: 8px;
     cursor: pointer;

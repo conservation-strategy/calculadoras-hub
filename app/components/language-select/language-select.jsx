@@ -3,26 +3,12 @@ import styles from './language-select.module.css';
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { doppio_one } from '@/app/fonts';
-
-const languages = [
-    {
-        id: 'EN',
-        label: 'English'
-    }, 
-    {
-        id: 'ES',
-        label: 'Español'
-    }, 
-    {
-        id: 'PT', 
-        label: 'Português'
-    }];
-
-// ... existing imports ...
+import { languages, useLanguage } from '@/app/context/provider';
 
 export default function LanguageSelect() {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState('EN');
+    // const [selected, setSelected] = useState('EN');
+    const { language, setLanguage } = useLanguage();
     const [optionWidth, setOptionWidth] = useState(0);
     const selectRef = useRef(null);
     
@@ -31,7 +17,7 @@ export default function LanguageSelect() {
     }
 
     const handleSelect = (e, lan) => {
-        setSelected(lan);
+        setLanguage(lan);
         setIsOpen(false);
     }
 
@@ -55,7 +41,7 @@ export default function LanguageSelect() {
         onBlur={handleClickOutside}
         >
             <button className={`${styles.button} ${doppio_one.className}`} onClick={handleOpen}>
-                {selected}
+                {language}
                 <div className={`${styles.arrow} ${isOpen ? styles.flipped : ''}`}>
                     <Image
                         src={'/keyboard_arrow_down.svg'}
@@ -68,12 +54,12 @@ export default function LanguageSelect() {
             <ul className={`${styles.dropdown} ${isOpen ? styles.open : ''}`}>
                 {languages.map((lan) => (
                     <li 
-                        key={lan.id}
-                        onClick={(e) => handleSelect(e, lan.id)}
-                        className={`${styles.option} ${lan.id === selected ? styles.selected : ''}`}
+                        key={lan}
+                        onClick={(e) => handleSelect(e, lan)}
+                        className={`${styles.option} ${lan === language ? styles.selected : ''}`}
                         style={{ width: `${optionWidth}px` }}
                     >
-                        {lan.id}
+                        {lan}
                     </li>
                 ))}
             </ul>

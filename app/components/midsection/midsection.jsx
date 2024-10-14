@@ -1,20 +1,24 @@
+'use client'
 import { droid_sans_bold } from '@/app/fonts';
 import styles from './midsection.module.css';
 import Image from 'next/image';
+import { useLanguage } from '@/app/context/provider';
 
 export default function MidSection () {
+    const { content } = useLanguage();
+    const { midsection } = content;
 
     return (
         <div className={styles.section}>
             <div className={`${styles.title} ${droid_sans_bold.className}`}>
-                open access
+                {midsection.title}
             </div>
             <div className={styles.headingContainer}>
                 <div className={`${styles.heading} ${droid_sans_bold.className}`}>
-                    Tools to support decision-making
+                    {midsection.heading}
                 </div>
                 <div className={styles.subHeading}>
-                    Empowering stakeholders with data-driven valuation insights
+                    {midsection.subHeading}
                 </div>
             </div>
             <div className={styles.displayContainer}>

@@ -1,110 +1,43 @@
-import { doppio_one } from '@/app/fonts';
+'use client'
 import styles from './calculators.module.css';
-import Image from 'next/image';
+import { useLanguage } from '@/app/context/provider';
+import { CalculatorButton, Icon } from './calculator-button';
+
+const circleBackground = {
+    mining: 'rgba(var(--lightgold-rgb), 0.6)',
+    indigenous: 'rgba(var(--lightred-rgb), 0.6)',
+    deforestation: 'rgba(var(--lightgreen-rgb), 0.6)'
+}
 
 export default function Calculators () {
+    const { content } = useLanguage();
+    const { calculators } = content;
 
     return (
         <div className={styles.calculators}>
-            <a className={`${styles.calculatorButton} ${styles.mining}`}
-            href=''
-            target='_blank'
-            rel='noopener noreferrer'
-            >
-                <div 
-                className={styles.circle}
-                style={{ backgroundColor: 'rgba(var(--lightgold-rgb), 0.6)'}}
-                >
-                    <div className={styles.miningIcon}>
-                        <Image
-                        src={'/assets/garimpo.svg'}
-                        alt='Calculadora do Garimpo'
-                        height={0}
-                        width={0}
-                        style={{
-                            width: '100%',
-                            height: 'auto',                            
-                        }}
-                        />
-                    </div>
-                </div>
-                <div className={styles.textContainer}>
-                    <div className={`${styles.title} ${doppio_one.className}`}>
-                        Mining Impacts Calculator
-                    </div>
-                    <div className={styles.description}>
-                        Estimates the costs of the social and environmental 
-                        damages caused by small-scale gold mining.
-                    </div>
-                </div>
-            </a>
-
-            <a className={`${styles.calculatorButton} ${styles.indigenous}`}
-            href=''
-            target='_blank'
-            rel='noopener noreferrer'
-            >
-                <div 
-                className={styles.circle}
-                style={{ backgroundColor: 'rgba(var(--lightred-rgb), 0.6)'}}
-                >
-                    <div className={styles.indigenousIcon}>
-                        <Image
-                        src={'/assets/indigena.svg'}
-                        alt='Calculadora do Garimpo'
-                        height={0}
-                        width={0}
-                        style={{
-                            width: '100%',
-                            height: 'auto',                            
-                        }}
-                        />
-                    </div>
-                </div>
-                <div className={styles.textContainer}>
-                    <div className={`${styles.title} ${doppio_one.className}`}>
-                        Indigenous Management Cost 
-                    Calculator</div>
-                    <div className={styles.description}>
-                        Estimates the costs of implementing Indigenous
-                        territorial management plans.
-                    </div>
-                </div>
-            </a>
-
-            <a className={`${styles.calculatorButton} ${styles.deforestation}`}
-            href=''
-            target='_blank'
-            rel='noopener noreferrer'
-            >
-                <div 
-                className={styles.circle}
-                style={{ backgroundColor: 'rgba(var(--lightgreen-rgb), 0.6)'}}
-                >
-                    <div className={styles.deforestationIcon}>
-                        <Image
-                        src={'/assets/desmatamento.svg'}
-                        alt='Calculadora do Garimpo'
-                        height={0}
-                        width={0}
-                        style={{
-                            width: '100%',
-                            height: 'auto',                            
-                        }}
-                        />
-                    </div>
-                </div>
-                <div className={styles.textContainer}>
-                    <div className={`${styles.title} ${doppio_one.className}`}>
-                        deforestation impacts calculator
-                    </div>
-                    <div className={styles.description}>
-                        Estimates the costs of the social and environmental damages
-                        caused by deforestation in the Amazon.
-                    </div>
-                </div>
-            </a>
+            <CalculatorButton
+            className={styles.mining}
+            circleBackground={circleBackground.mining}
+            icon={<Icon className={styles.miningIcon} icon='/assets/garimpo.svg' />}
+            title={calculators.mining.title}
+            description={calculators.mining.description}
+            />
+            <CalculatorButton
+            className={styles.indigenous}
+            circleBackground={circleBackground.indigenous}
+            icon={<Icon className={styles.indigenousIcon} icon='/assets/indigena.svg' />}
+            title={calculators.indigenous.title}
+            description={calculators.indigenous.description}
+            />
+            <CalculatorButton
+            className={styles.deforestation}
+            circleBackground={circleBackground.deforestation}
+            icon={<Icon className={styles.deforestationIcon} icon='/assets/desmatamento.svg' />}
+            title={calculators.deforestation.title}
+            description={calculators.deforestation.description}
+            />            
         </div>
 
     )
 }
+
