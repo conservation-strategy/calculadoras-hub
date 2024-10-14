@@ -1,5 +1,7 @@
+'use client'
 import { droid_sans_bold } from '@/app/fonts';
 import styles from './quotes.module.css';
+import { useLanguage } from '@/app/context/provider';
 
 export default function Quotes () {
 
@@ -12,16 +14,19 @@ export default function Quotes () {
 }
 
 const MainQuote = () => {
+    const { content } = useLanguage();
+    const { quotes } = content;
+    const { main } = quotes;
 
     return (
         <div className={styles.mainContainer}>
             <div className={styles.line}></div>
             <div className={styles.frame}>
                 <div className={`${styles.quote} ${styles.mainQuote}`}>
-                    CSF&apos;s online tools empower decision-makers with user-friendly information on the costs and benefits of human interactions with the environment, turning months of work into instant insights for more effective planning and fundraising, and calculation of environmental fines.
+                    {main.quote}
                 </div>
                 <div className={`${styles.mainAuthor} ${droid_sans_bold.className}`}>
-                    Pedro Gasparinetti, CSF Innovation Director
+                    {main.author}
                 </div>
             </div>
         </div>
@@ -29,6 +34,10 @@ const MainQuote = () => {
 }
 
 const Slide = () => {
+    const { content } = useLanguage();
+    const { quotes } = content;
+    const { cards } = quotes;
+
     return (
         <div className={styles.slide}>
             <div className={`${styles.arrow} ${styles.left}`}>
@@ -39,12 +48,12 @@ const Slide = () => {
             </div>
             <div className={styles.card}>
                 <div className={styles.quote}>
-                    The mining impacts calculator allows a simple, fast and effective damage identification, establishing precise criteria and individualizing each valuation criterion, making the Public Prosecutor's Office's reparation claims even more fair and technically sound.
+                    {cards[0].quote}
                 </div>
                 <div className={`${styles.author} ${droid_sans_bold.className}`}>
-                    Gustavo Kenner,
+                    {cards[0].author},
                     <br/>
-                    Federal Prosecutor (Brazil)
+                    {cards[0].position}
                 </div>
             </div>
         </div>
