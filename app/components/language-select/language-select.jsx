@@ -23,6 +23,7 @@ const languages = [
 export default function LanguageSelect() {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState('EN');
+    const [optionWidth, setOptionWidth] = useState(0);
     const selectRef = useRef(null);
     
     const handleOpen = () => {
@@ -39,6 +40,13 @@ export default function LanguageSelect() {
             setIsOpen(false);
         }, 150);
     }
+
+    useEffect(() => {
+        if (selectRef.current) {
+            setOptionWidth(selectRef.current.offsetWidth);
+        }
+    }, []);
+
 
     return (
         <div 
@@ -62,9 +70,10 @@ export default function LanguageSelect() {
                     <li 
                         key={lan.id}
                         onClick={(e) => handleSelect(e, lan.id)}
-                        className={`${styles.option} ${lan.id === selected ? styles.selected : ''}`} 
+                        className={`${styles.option} ${lan.id === selected ? styles.selected : ''}`}
+                        style={{ width: `${optionWidth}px` }}
                     >
-                        {lan.label}
+                        {lan.id}
                     </li>
                 ))}
             </ul>

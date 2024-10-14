@@ -29,7 +29,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1);
     color: #000000;
     border-radius: 4px;
     overflow: hidden;
@@ -59,6 +59,8 @@
 .option.selected {
     opacity: 0.6;
     pointer-events: none;
+    /* background-color: #3a3a3a;
+    color: white;    */
 }
 .option.selected:hover {
     background-color: transparent;
