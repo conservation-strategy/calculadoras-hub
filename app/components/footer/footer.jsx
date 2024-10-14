@@ -14,7 +14,9 @@ export default function Footer () {
                 </a>
             </div>
             <div>
-                contact: <a className={styles.link}>csfbrasil@conservation-strategy.org</a>
+                contact: <a href="mailto:csfbrasil@conservation-strategy.org" className={styles.link}>
+                    csfbrasil@conservation-strategy.org
+                </a>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.footnote}>
