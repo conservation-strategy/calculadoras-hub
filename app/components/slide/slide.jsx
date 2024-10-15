@@ -43,33 +43,30 @@ export default function Slide () {
             </div>
             <div className={styles.cardContainer}>
                 <AnimatePresence initial={false} custom={direction} mode='wait'>
-                    {cards.map((card, i) => (
-                        position === i && 
-                            <motion.div
-                            key={i}
-                            custom={direction}
-                            variants={variants}
-                            initial="enter"
-                            animate="center"
-                            exit="exit"
-                            transition={{
-                                opacity: { duration: 0.1 }
-                            }}
-                            drag="x"
-                            dragConstraints={{ left: 0, right: 0 }}
-                            dragElastic={1}
-                            onDragEnd={(e, { offset, velocity }) => {
-                                const swipe = swipePower(offset.x, velocity.x);
-                                if(swipe < -swipeConfidenceThreshold) {
-                                    paginate(1);
-                                } else if(swipe > swipeConfidenceThreshold) {
-                                    paginate(-1);
-                                }
-                            }}
-                            >
-                                <Card key={i} {...card}/>
-                            </motion.div>
-                    ))}
+                    <motion.div
+                    key={position}
+                    custom={direction}
+                    variants={variants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{
+                        opacity: { duration: 0.1 }
+                    }}
+                    drag="x"
+                    dragConstraints={{ left: 0, right: 0 }}
+                    dragElastic={1}
+                    onDragEnd={(e, { offset, velocity }) => {
+                        const swipe = swipePower(offset.x, velocity.x);
+                        if(swipe < -swipeConfidenceThreshold) {
+                            paginate(1);
+                        } else if(swipe > swipeConfidenceThreshold) {
+                            paginate(-1);
+                        }
+                    }}
+                    >
+                        <Card {...cards[position]}/>
+                    </motion.div>
                 </AnimatePresence>
             </div>
         </div>

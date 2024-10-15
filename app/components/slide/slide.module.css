@@ -32,6 +32,10 @@
     width: 74%;
     margin: auto;
     min-height: 300px;
+    cursor: grab;
+}
+.card:active {
+    cursor: grabbing;
 }
 .quote {
     font-style: italic;
