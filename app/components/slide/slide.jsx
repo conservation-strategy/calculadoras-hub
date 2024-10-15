@@ -3,6 +3,8 @@ import styles from './slide.module.css';
 import { useLanguage } from '@/app/context/provider';
 import { droid_sans_bold } from '@/app/fonts';
 import { useCallback, useState } from 'react';
+import { motion, AnimatePresence, useAnimate } from "framer-motion";
+import { variants, swipeConfidenceThreshold, swipePower } from './animation';
 
 export default function Slide () {
     const { content } = useLanguage();
@@ -39,9 +41,37 @@ export default function Slide () {
                     <Arrow/>
                 </button>
             </div>
-            {cards.map((card, i) => (
-                position === i && <Card key={i} {...card}/>
-            ))}                        
+            <div className={styles.cardContainer}>
+                <AnimatePresence initial={false} custom={direction} mode='wait'>
+                    {cards.map((card, i) => (
+                        position === i && 
+                            <motion.div
+                            key={i}
+                            custom={direction}
+                            variants={variants}
+                            initial="enter"
+                            animate="center"
+                            exit="exit"
+                            transition={{
+                                opacity: { duration: 0.1 }
+                            }}
+                            drag="x"
+                            dragConstraints={{ left: 0, right: 0 }}
+                            dragElastic={1}
+                            onDragEnd={(e, { offset, velocity }) => {
+                                const swipe = swipePower(offset.x, velocity.x);
+                                if(swipe < -swipeConfidenceThreshold) {
+                                    paginate(1);
+                                } else if(swipe > swipeConfidenceThreshold) {
+                                    paginate(-1);
+                                }
+                            }}
+                            >
+                                <Card key={i} {...card}/>
+                            </motion.div>
+                    ))}
+                </AnimatePresence>
+            </div>
         </div>
     )
 }
