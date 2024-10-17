@@ -51,7 +51,7 @@ export function CalculatorButton({
                 </div>
             </div>
             <div className={styles.mobile}>
-                <Accordion isOpen={isOpen} description={description} linkText={linkText} />
+                <Accordion isOpen={isOpen} description={description} linkText={linkText} href={href}/>
             </div>
             <div className={styles.desktop}>
                 <div className={styles.textContainer}>
@@ -85,7 +85,7 @@ export function Icon ({ className, icon }) {
     )
 }
 
-function Accordion ({ isOpen, description, linkText }) {
+function Accordion ({ isOpen, description, href, linkText }) {
     const contentRef = useRef(null);
     const [contentHeight, setContentHeight] = useState(0);
     
@@ -123,7 +123,12 @@ function Accordion ({ isOpen, description, linkText }) {
                     <div className={styles.description}>
                         {description}
                     </div>
-                    <a className={styles.link}>
+                    <a className={styles.link}
+                    href={href}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    onClick={(e) => e.stopPropagation()}
+                    >
                         {linkText}
                     </a>
                 </div>
