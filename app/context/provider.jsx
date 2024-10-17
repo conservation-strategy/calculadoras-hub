@@ -15,7 +15,7 @@ const findContent = (language) => {
 const AppContext = createContext();
 
 export function AppProvider({ children }) {
-  const [language, setLanguage] = useState(SPANISH); 
+  const [language, setLanguage] = useState(ENGLISH); 
   const [content, setContent] = useState(findContent(ENGLISH))
 
   useEffect(() => {
