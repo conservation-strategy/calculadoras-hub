@@ -15,8 +15,9 @@ export default function Navbar () {
                 <Image
                 src={'/assets/logo.svg'}
                 alt='logo CSF'
-                width={64}
-                height={64}
+                width={0}
+                height={0}
+                className={styles.logo}
                 />
             </a>
             <LanguageSelect/>

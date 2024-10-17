@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    font-size: inherit;
+    font-size: 18px;
     opacity: 0.8;
 }
 .arrow {

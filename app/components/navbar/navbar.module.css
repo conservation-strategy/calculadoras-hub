@@ -14,3 +14,26 @@
     align-items: center;
     cursor: pointer;
 }
+.logo {
+    width: 64px;
+    height: 64px;
+}
+
+@media (max-width: 1024px) {
+    .navbar{
+        padding: 28px 64px;
+    }
+    .logo{
+        width: 56px;
+        height: 56px;
+    }
+}
+@media (max-width: 744px) {
+    .navbar{
+        padding: 24px 40px;
+    }
+    .logo{
+        width: 48px;
+        height: 48px;
+    }
+}
