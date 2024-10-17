@@ -13,7 +13,8 @@
             "deforestation": {
                 "title": "deforestation impacts calculator",
                 "description": "Estimates the costs of the social and environmental damages caused by deforestation in the Amazon."
-            }
+            },
+            "link": "Try it out"
         },
         "midsection" : {
             "title": "open access",
@@ -67,7 +68,8 @@
             "deforestation": {
                 "title": "Calculadora de Impactos de la Deforestación",
                 "description": "Valoración de los daños sociales y ambientales ocasionados por la deforestación en la Amazonía."
-            }
+            },
+            "link": "Pruébalo"
         },
         "midsection" : {
             "title": "libre acceso",
@@ -121,7 +123,8 @@
             "deforestation": {
                 "title": "Calculadora de Impactos do Desmatamento",
                 "description": "Valoração dos danos sociais e ambientais causados pelo desmatamento na Amazônia."
-            }
+            },
+            "link": "Teste agora"
         },
         "midsection" : {
             "title": "acesso gratuito",

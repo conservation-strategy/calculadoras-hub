@@ -53,12 +53,12 @@ button {
   border: none;
   transition: all 250ms ease-in-out;
 }
-button:hover {
+/* button:hover {
   transform: scale(1.05);
 }
 button:active {
   transform: scale(0.95);
-}
+} */
 
 ul {
   list-style-type: none;

@@ -1,51 +1,164 @@
 /*  FLUID RESPONSIVENESS: 744 -> 1440px*/
 
 .calculators {
-    width: 100%;
-    height: 100%;
-    max-height: calc(738px + 48px + 4px);
-    max-width: var(--max-width-content);
     display: flex;
-    justify-content: center;
-    padding: 24px;
-    gap: clamp(0.5625rem, -0.8405rem + 3.0172vw, 1.875rem); /* 9 -> 30px */
+    flex-direction: column;
+    width: 100%;
+}
+
+.desktop {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+
+@media(min-width: 900px) {
+    .calculators {
+        flex-direction: row;
+        height: 100%;
+        max-height: calc(738px + 48px + 4px);
+        max-width: var(--max-width-content);
+        justify-content: center;
+        padding: 24px;
+        gap: clamp(0.5625rem, -0.8405rem + 3.0172vw, 1.875rem); /* 9 -> 30px */
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
 }
 
 .calculatorButton {
-    /* aspect-ratio: 395 / 738; */
-    width: 33%;
-    max-width: 395px;
-    /* padding: 36 -> 80px  24 -> 48px*/
-    padding: clamp(2.25rem, -0.6897rem + 6.3218vw, 5rem) clamp(1.5rem, -0.1034rem + 3.4483vw, 3rem);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(0.875rem, -0.8621rem + 3.7356vw, 2.5rem); /* 14 -> 36px*/
-    margin: 2px;
-    transition: all 250ms ease-in-out;
+    gap: 24px;
+    text-align: left;
+    padding: 40px 40px 16px;
+    color: #ffffff;
+    font-family: inherit;
 }
-.calculatorButton:hover {
-    /* transform: scale(1.025) translateY(-1.5%); */
-    transform: translateY(-2.5%);
-    /* transform: scale(1.025); */
+.calculatorButton:active {
+    transform: none;
+}
+
+@media(min-width: 900px) {
+    .calculatorButton {
+        /* aspect-ratio: 395 / 738; */
+        width: 33%;
+        max-width: 395px;
+        /* padding: 36 -> 80px  24 -> 48px*/
+        padding: clamp(2.25rem, -0.6897rem + 6.3218vw, 5rem) clamp(1.5rem, -0.1034rem + 3.4483vw, 3rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(0.875rem, -0.8621rem + 3.7356vw, 2.5rem); /* 14 -> 36px*/
+        margin: 2px;
+        transition: all 250ms ease-in-out;
+        position: relative;
+        color: transparent;
+    }
+    .calculatorButton:hover {
+        /* transform: scale(1.025) translateY(-1.5%); */
+        transform: translateY(-2.5%);
+        color: #ffffff;
+        /* transform: scale(1.025); */
+    }
 }
 
 .deforestation {
     background-color: var(--darkgreen);
     background-image: url('/assets/fundo_desmatamento.png');
+    background-size: cover;
 }
 .mining {
     background-color: var(--darkgold);
     background-image: url('/assets/fundo_mineração.png');
+    background-size: cover;
+    background-position-y: 10%;
 }
 .indigenous {
     background-color: var(--darkred);
     background-image: url('/assets/fundo_indígena.png');
+    background-size: cover;
 }
-.deforestation:hover,
-.indigenous:hover,
-.mining:hover{
-    background-image: none;
+
+.accordionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 560px;
+}
+.accordionWrapper {
+    width: 100%;
+    overflow: hidden;
+    transition: height 250ms ease-in-out;
+}
+
+.accordion {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    padding: 24px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.accordion.open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    transform: none;
+    transition: all 250ms ease-in-out;
+    margin: auto;
+}
+.arrow.flipped {
+    transform: scaleY(-1);
+}
+.main {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.circle {
+    aspect-ratio: 1;
+    width: 50%;
+    max-width: 240px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+
+@media(min-width: 900px) {
+    .deforestation:hover,
+    .indigenous:hover,
+    .mining:hover{
+        background-image: none;
+    }
+    .circle {
+        width: 100%;
+        max-width: none;
+    }
 }
 .indigenousIcon{
     width: 58.25%;
@@ -56,14 +169,7 @@
 .deforestationIcon {
     width: 55.89%;
 }
-.circle {
-    aspect-ratio: 1;
-    width: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .textContainer {
     display: flex;
@@ -74,15 +180,36 @@
     color: #ffffff;
     text-align: left;
 }
+.title {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+/* .description {
+    font-size: 24px;
+} */
 /* responsive fluido 1440 -> 744
     font-size
         title: 30 -> 22
         desc: 22 -> 14
 */
-.title {
-    font-size: clamp(1.375rem, 0.8405rem + 1.1494vw, 1.875rem);
-    text-transform: capitalize;
+@media(min-width: 900px) {
+    .title {
+        font-size: clamp(1.375rem, 0.8405rem + 1.1494vw, 1.875rem);
+    }
+    .description {
+        font-size:  clamp(0.875rem, 0.3405rem + 1.1494vw, 1.375rem);
+    }
 }
-.description {
-    font-size:  clamp(0.875rem, 0.3405rem + 1.1494vw, 1.375rem);
+
+
+.hiddenText { 
+    width: fit-content;
+    position: absolute;
+    bottom: 40px;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    /* opacity: 0.87; */
+    text-decoration: underline;
+    font-size: 24px;
 }

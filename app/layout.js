@@ -4,7 +4,7 @@ import { AppProvider } from "./context/provider";
 
 export const metadata = {
   title: "Calculator Hub",
-  description: "Developed by the Conservation Strategy Fund",
+  description: "A project by the Conservation Strategy Fund",
 };
 
 export default function RootLayout({ children }) {

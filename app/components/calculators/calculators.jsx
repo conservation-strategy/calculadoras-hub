@@ -22,6 +22,7 @@ export default function Calculators () {
             title={calculators.mining.title}
             description={calculators.mining.description}
             href={'https://miningcalculator.conservation-strategy.org/'}
+            linkText={calculators.link}
             />
             <CalculatorButton
             className={styles.indigenous}
@@ -30,6 +31,7 @@ export default function Calculators () {
             title={calculators.indigenous.title}
             description={calculators.indigenous.description}
             href={'https://calculadoraindigena.com.br/home'}
+            linkText={calculators.link}
             />
             <CalculatorButton
             className={styles.deforestation}
@@ -38,6 +40,7 @@ export default function Calculators () {
             title={calculators.deforestation.title}
             description={calculators.deforestation.description}
             href={'https://deforestationcalculator.conservation-strategy.org/'}
+            linkText={calculators.link}
             />            
         </div>
 
