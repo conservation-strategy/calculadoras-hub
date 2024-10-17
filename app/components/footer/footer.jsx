@@ -10,7 +10,7 @@ export default function Footer () {
     return (
         <div className={`${styles.footer} ${duru_sans.className}`}>
             <Socials/>            
-            <div>
+            <div style={{ textWrap: 'balance '}}>
                 {footer.about}{' '}
                 <a style={{ textDecoration: 'underline' }}
                 href='https://www.conservation-strategy.org/'
