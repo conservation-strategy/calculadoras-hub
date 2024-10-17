@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 80px;
+    padding: 26px 80px;
     background-color: var(--darkgray);
     color: #ffffff;
 }
@@ -21,7 +21,7 @@
 
 @media (max-width: 1024px) {
     .navbar{
-        padding: 28px 64px;
+        padding: 22px 64px;
     }
     .logo{
         width: 56px;
@@ -30,7 +30,7 @@
 }
 @media (max-width: 744px) {
     .navbar{
-        padding: 24px 40px;
+        padding: 18px 40px;
     }
     .logo{
         width: 48px;
