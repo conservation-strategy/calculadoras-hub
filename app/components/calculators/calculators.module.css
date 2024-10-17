@@ -193,7 +193,7 @@
 }
 .title {
     font-size: clamp(1.5rem, 1.3317rem + 0.6536vw, 1.75rem);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 /* .description {
     font-size: 24px;
