@@ -3,15 +3,15 @@
         "id": "en",
         "calculators": {
             "mining": {
-                "title": "mining impacts calculator",
+                "title": "Mining Impacts Calculator",
                 "description": "Estimates the costs of the social and environmental damages caused by small-scale gold mining."
             },
             "indigenous": {
-                "title": "indigenous management cost calculator",
+                "title": "Indigenous Land Management Costs Calculator",
                 "description": "Estimates the costs of implementing Indigenous territorial management plans."
             },
             "deforestation": {
-                "title": "deforestation impacts calculator",
+                "title": "Deforestation Impacts Calculator",
                 "description": "Estimates the costs of the social and environmental damages caused by deforestation in the Amazon."
             },
             "link": "Try it out"
@@ -23,7 +23,7 @@
         },
         "quotes": {
             "main": {
-                "quote": "CSF's online tools empower decision-makers with user-friendly information on the costs and benefits of human interactions with the environment, turning months of work into instant insights for more effective planning and fundraising, and calculation of environmental fines.",
+                "quote": "CSF’s online tools empower decision-makers with free user-friendly information on the costs and benefits of the environmental and social impacts of human interactions with the environment, turning months of work into instant insights for more effective planning and fundraising, and a more accurate estimation of damages for environmental fines.",
                 "author": "Pedro Gasparinetti, CSF Innovation Director"
             },
             "cards": [
@@ -38,9 +38,9 @@
                     "position": "ISA/Rede Xingu+"
                 },
                 {
-                    "quote": "The Deforestation Impacts Calculator helps us to thoroughly assess deforestation's impacts, providing IBAMA (Brazilian Environmental Protection Agency | Federal Authority), a solid foundation for administrative processes and civil actions.",
+                    "quote": "The Deforestation Impacts Calculator helps us to thoroughly assess deforestation's impacts, providing IBAMA a solid foundation for administrative processes and civil actions.",
                     "author": "Raquel Alves",
-                    "position": "IBAMA's Environmental Restoration Coordinator"
+                    "position": "IBAMA's Environmental Restoration Coordinator (Brazilian Environmental Protection Agency)"
                 }
             ]
         },
@@ -59,17 +59,17 @@
         "calculators": {
             "mining": {
                 "title": "Calculadora de Impactos de la Minería de Oro",
-                "description": "Valoración de los daños sociales y ambientales ocasionados por la minería aurífera de pequeña escala en la Amazonía."
+                "description": "Valoración de los daños sociales y ambientales ocasionados por la minería aurífera de pequeña escala."
             },
             "indigenous": {
-                "title": "Calculadora de Costos de Gestión de Territorios Indígenas",
+                "title": "Calculadora de Costos de Gestión de las Tierras Indígenas",
                 "description": "Estimación de los costos para la planificación presupuestaria de los planes de gestión territorial indígena."
             },
             "deforestation": {
                 "title": "Calculadora de Impactos de la Deforestación",
                 "description": "Valoración de los daños sociales y ambientales ocasionados por la deforestación en la Amazonía."
             },
-            "link": "Pruébalo"
+            "link": "Accede aquí"
         },
         "midsection" : {
             "title": "libre acceso",
@@ -93,9 +93,9 @@
                     "position": "Instituto Socio Ambiental/Red Xingu+"
                 },
                 {
-                    "quote": "La Calculadora de Impactos de la Deforestación nos ayuda a evaluar minuciosamente los impactos causados por la deforestación, ofreciendo al Instituto Brasilero de Medio Ambiente y Recursos Naturales (IBAMA | Autoridad Federal) una base sólida para implementar procesos administrativos y acciones civiles públicas.",
+                    "quote": "La Calculadora de Impactos de la Deforestación nos ayuda a evaluar minuciosamente los impactos causados por la deforestación, ofreciendo al IBAMA una base sólida para implementar procesos administrativos y acciones civiles públicas.",
                     "author": "Raquel Alves",
-                    "position": "Coordinadora de Recuperación Ambiental, IBAMA"
+                    "position": "Coordinadora de Recuperación Ambiental, IBAMA (Instituto Brasilero de Medio Ambiente y Recursos Naturales)"
                 }
             ]
         },
