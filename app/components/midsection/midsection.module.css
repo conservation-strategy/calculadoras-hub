@@ -76,6 +76,11 @@
     padding-block: 60px;
     padding-bottom: 200px;
 }
+@media(max-width: 1200px) {
+    .displayContainer {
+        padding-bottom: clamp(5.625rem, -1.5132rem + 15.3509vw, 10rem);
+    }
+}
 .display {
     width: 78%;
     display: flex;
