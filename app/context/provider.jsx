@@ -1,6 +1,7 @@
 'use client'
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import data from './language.json';
+import { GoogleAnalytics } from 'nextjs-google-analytics'
 
 export const ENGLISH = 'en';
 export const PORTUGUESE = 'pt';
@@ -28,7 +29,7 @@ export function AppProvider({ children }) {
     content
   };
 
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={value}><GoogleAnalytics trackPageViews />{children}</AppContext.Provider>;
 }
 
 export function useLanguage() {
