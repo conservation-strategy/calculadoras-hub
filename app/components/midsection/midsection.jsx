@@ -10,10 +10,10 @@ export default function MidSection () {
 
     return (
         <div className={styles.section}>
-            <div className={`${styles.title} ${droid_sans_bold.className}`}>
-                {midsection.title}
-            </div>
             <div className={styles.headingContainer}>
+                <div className={`${styles.title} ${droid_sans_bold.className}`}>
+                    {midsection.title}
+                </div>
                 <div className={`${styles.heading} ${droid_sans_bold.className}`}>
                     {midsection.heading}
                 </div>
@@ -33,7 +33,6 @@ export default function MidSection () {
                         className={styles.phoneImg}
                         quality={100}
                         priority
-                        objectFit='contain'
                         />
                     </div>
                     <div className={styles.tabletDisplay}>
