@@ -47,7 +47,7 @@
         "footer": {
             "about": "About CSF",
             "link": "here",
-            "contact": "contact",
+            "contact": "contact:",
             "footnote": [
                 "CSF is not responsible for the consequences of using the calculators.",
                 "Copyright ©️ 2024 CSF All rights reserved."
@@ -102,7 +102,7 @@
         "footer": {
             "about": "Acerca de Conservación Estratégica - CSF",
             "link": "aquí",
-            "contact": "contacto",
+            "contact": "contacto:",
             "footnote": [
                 "Conservación Estratégica (CSF) no se responsabiliza de las consecuencias del uso de las calculadoras.",
                 "Copyright ©️ 2024 CSF Todos los derechos reservados."
