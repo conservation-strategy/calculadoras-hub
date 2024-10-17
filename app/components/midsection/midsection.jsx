@@ -2,10 +2,10 @@
 import { droid_sans_bold } from '@/app/fonts';
 import styles from './midsection.module.css';
 import Image from 'next/image';
-import { useLanguage } from '@/app/context/provider';
+import { useLanguage, ENGLISH } from '@/app/context/provider';
 
 export default function MidSection () {
-    const { content } = useLanguage();
+    const { content, language } = useLanguage();
     const { midsection } = content;
 
     return (
@@ -14,7 +14,7 @@ export default function MidSection () {
                 <div className={`${styles.title} ${droid_sans_bold.className}`}>
                     {midsection.title}
                 </div>
-                <div className={`${styles.heading} ${droid_sans_bold.className}`}>
+                <div className={`${styles.heading} ${droid_sans_bold.className} ${language !== ENGLISH ? styles.translation : ''}`}>
                     {midsection.heading}
                 </div>
                 <div className={styles.subHeading}>

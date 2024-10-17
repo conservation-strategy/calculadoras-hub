@@ -2,9 +2,9 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import data from './language.json';
 
-const ENGLISH = 'en';
-const PORTUGUESE = 'pt';
-const SPANISH = 'es';
+export const ENGLISH = 'en';
+export const PORTUGUESE = 'pt';
+export const SPANISH = 'es';
 export const languages = [ENGLISH, SPANISH, PORTUGUESE];
 
 const findContent = (language) => {
@@ -15,7 +15,7 @@ const findContent = (language) => {
 const AppContext = createContext();
 
 export function AppProvider({ children }) {
-  const [language, setLanguage] = useState(ENGLISH); 
+  const [language, setLanguage] = useState(SPANISH); 
   const [content, setContent] = useState(findContent(ENGLISH))
 
   useEffect(() => {
