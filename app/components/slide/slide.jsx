@@ -31,14 +31,14 @@ export default function Slide () {
 
     return (
         <div className={styles.slide}>
-            <div className={`${styles.arrow} ${styles.left}`}>
-                <button onClick={() => paginate(-1)}>
-                    <Arrow/>
+            <div className={`${styles.arrowContainer} ${styles.left}`}>
+                <button className={styles.arrow} onClick={() => paginate(-1)}>
+                    <ArrowLeft/>
                 </button>
             </div>
-            <div className={`${styles.arrow} ${styles.right}`}>
-                <button onClick={() => paginate(1)}>
-                    <Arrow/>
+            <div className={`${styles.arrowContainer} ${styles.right}`}>
+                <button className={`${styles.arrow}`} onClick={() => paginate(1)}>
+                    <ArrowRight/>
                 </button>
             </div>
             <div className={styles.cardContainer}>
@@ -88,10 +88,17 @@ const Card = ({ quote, author, position }) => {
     )
 }
 
-const Arrow = () => {
+const ArrowLeft = () => {
     return (
-        <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M-7.64949e-07 15.5L26.25 0.344554L26.25 30.6554L-7.64949e-07 15.5Z" fill="black"/>
+        </svg>
+    )
+}
+const ArrowRight = () => {
+    return (
+        <svg width="100%" height="100%" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27 15.5L0.749999 30.6554L0.75 0.344555L27 15.5Z" fill="black"/>
         </svg>
     )
 }

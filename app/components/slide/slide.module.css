@@ -6,10 +6,10 @@
     position: relative;
     z-index: 0;
 }
-.arrow {
+.arrowContainer {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    /* transform: translateY(-50%); */
     z-index: 10;
 }
 .left {
@@ -17,8 +17,18 @@
 }
 .right {
     right: 0;
-    transform: scaleX(-1);
 }
+@media(max-width: 1200px) {
+    .right,
+    .left {
+        margin: 0px 40px;
+    }
+}
+.arrow {
+    width: clamp(0.9375rem, 0.2862rem + 2.5292vw, 2.25rem);
+    height: auto;
+}
+
 .cardContainer {
     width: 100%;
     overflow: hidden;
@@ -31,8 +41,7 @@
     text-align: center;
     width: 74%;
     margin: auto;
-    min-height: 330px;
-    cursor: grab;
+    min-height: 386px;    cursor: grab;
 }
 .card:active {
     cursor: grabbing;
@@ -41,6 +50,58 @@
     font-style: italic;
     font-size: var(--h2);
 }
+
+@media(max-width: 744px) {
+    .arrowContainer {
+        top: 40%;
+    }
+    .card {
+        width: 64%;
+        gap: 20px;
+    }
+    
+    .quote {
+        text-align: left;
+    }
+}
 .author {
     font-size: var(--h3);
+}
+@media(max-width: 1280px) {
+    .quote {
+        font-size: var(--step-2);
+    }
+    .author {
+        font-size: var(--step-0);
+    }
+}
+@media(max-width: 430px) {
+    .arrowContainer {
+        /* top: 50%; */
+    }
+    .card {
+        gap: 16px;
+    }
+    .author {
+        font-size: 15px;
+    }
+    .quote {
+        font-size: 20px;
+    }
+    .right,
+    .left {
+        margin: 0px 32px;
+    }
+}
+@media (max-width: 375px) {
+    .author {
+        font-size: 14px
+    }
+    .quote {
+        font-size: 18px;
+    }
+    .right,
+    .left {
+        margin: 0px 24px;
+    }
 }

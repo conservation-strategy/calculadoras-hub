@@ -4,7 +4,18 @@
     flex-direction: column;
     align-items: center;
     gap: 96px;
-    margin-block: 64px;
+    /* margin-block: 64px; */
+    margin-block: clamp(0.5rem, -0.6522rem + 4.4747vw, 3.375rem);
+}
+@media(max-width: 1024px) {
+    .section {
+        gap: clamp(0.25rem, -2.6111rem + 11.1111vw, 4.5rem);
+    }
+}
+@media(max-width: 430px) {
+    .section {
+        gap: 0;
+    }
 }
 .mainContainer {
     width: 100%;
@@ -29,7 +40,7 @@
     width: 70%;
     max-width: 835px;
     aspect-ratio: 835 / 481;
-    padding: 0px 145px;
+    padding: clamp(2.125rem, -0.6304rem + 10.7004vw, 9rem);
     background-color: #ffffff;
     gap: 20px;
     border-radius: 10px;
@@ -39,16 +50,34 @@
     align-items: start;
     justify-content: center;
 }
+@media(max-width: 744px) {
+    .frame {
+        width: 80%;
+    }
+}
 .quote {
     font-style: italic;
     font-size: var(--h2);
 }
 .mainQuote {
     text-align: left;
-    font-size: var(--h3);
+    font-size: 26px
 }
 .mainAuthor {
     font-size: 22px;
+    margin: 0px 4px;
+}
+@media(max-width: 1280px) {
+    .mainQuote,
+    .mainAuthor {
+        font-size: var(--step-1);
+    }
+}
+@media(max-width: 375px) {
+    .mainAuthor,
+    .mainQuote {
+        font-size: 16px;
+    }
 }
 
 .slide {
