@@ -17,7 +17,8 @@
     .calculators {
         flex-direction: row;
         height: 100%;
-        max-height: calc(738px + 48px + 4px);
+        /* height: calc(100vh - 48px - 133px); */
+        min-height: calc(738px + 48px + 4px);
         max-width: var(--max-width-content);
         justify-content: center;
         padding: 24px;
@@ -53,7 +54,6 @@
 
 @media(min-width: 1025px) {
     .calculatorButton {
-        /* aspect-ratio: 395 / 738; */
         width: 33%;
         max-width: 395px;
         /* padding: 36 -> 80px  24 -> 48px*/
@@ -224,11 +224,9 @@
 
 .hiddenText { 
     width: fit-content;
-    position: absolute;
-    bottom: 40px;
-    left: 0; 
-    right: 0;
+    /* position: absolute; */
     margin: auto;
+    margin-top: 24px;
     /* opacity: 0.87; */
     text-decoration: underline;
     font-size: 24px;
