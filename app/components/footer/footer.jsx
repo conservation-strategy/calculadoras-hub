@@ -20,15 +20,16 @@ export default function Footer () {
                     {footer.link}
                 </a>
             </div>
-            <div>
-                {footer.contact} <a href="mailto:csfbrasil@conservation-strategy.org" className={styles.link}>
+            <div className={styles.contact}>
+                {footer.contact}{' '}
+                <a href="mailto:csfbrasil@conservation-strategy.org" className={styles.link}>
                     csfbrasil@conservation-strategy.org
                 </a>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.footnote}>
-                <div>{footer.footnote[0]}</div>
-                <div>{footer.footnote[1]}</div>
+                {footer.footnote[0]}{' '}
+                {footer.footnote[1]}
             </div>            
         </div>
     )
@@ -46,8 +47,9 @@ const Socials = () => {
                     <Image
                     src={'/IN-icon.svg'}
                     alt='IN icon'
-                    width={38}
-                    height={38}
+                    width={0}
+                    height={0}
+                    className={styles.icon}
                     />
                 </a>
                 <a
@@ -58,8 +60,9 @@ const Socials = () => {
                     <Image
                     src={'/YT-icon.svg'}
                     alt='YT icon'
-                    width={38}
-                    height={38}
+                    width={0}
+                    height={0}
+                    className={styles.icon}
                     />
                 </a>
                 <a
@@ -70,8 +73,9 @@ const Socials = () => {
                     <Image
                     src={'/IG-icon.svg'}
                     alt='IG icon'
-                    width={38}
-                    height={38}
+                    width={0}
+                    height={0}
+                    className={styles.icon}
                     />
                 </a>
                 <a
@@ -82,8 +86,9 @@ const Socials = () => {
                     <Image
                     src={'/X-icon.svg'}
                     alt='X icon'
-                    width={38}
-                    height={38}
+                    width={0}
+                    height={0}
+                    className={styles.icon}
                     />
                 </a>
                 <a
@@ -94,8 +99,9 @@ const Socials = () => {
                     <Image
                     src={'/fb-icon.svg'}
                     alt='fb icon'
-                    width={38}
-                    height={38}
+                    width={0}
+                    height={0}
+                    className={styles.icon}
                     />
                 </a>
             </div>
