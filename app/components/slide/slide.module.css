@@ -41,7 +41,8 @@
     text-align: center;
     width: 74%;
     margin: auto;
-    min-height: 386px;    cursor: grab;
+    min-height: 386px;   
+    cursor: grab;
 }
 .card:active {
     cursor: grabbing;
@@ -98,10 +99,19 @@
         font-size: 14px
     }
     .quote {
-        font-size: 18px;
+        font-size: 17px;
     }
     .right,
     .left {
         margin: 0px 24px;
+    }
+    .card {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card {
+        min-height: 360px;
     }
 }
