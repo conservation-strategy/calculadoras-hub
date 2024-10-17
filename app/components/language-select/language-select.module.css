@@ -51,7 +51,7 @@
 }
 .button,
 .option {
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .option {
     padding: 8px;
