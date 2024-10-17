@@ -4,7 +4,7 @@ import { doppio_one } from '@/app/fonts';
 import Image from 'next/image';
 import { useCallback, useState, useEffect, useRef } from 'react';
 
-const DESKTOP_BREAKPOINT = 900;
+const DESKTOP_BREAKPOINT = 1025;
 
 export function CalculatorButton({ 
     className, 
@@ -35,8 +35,6 @@ export function CalculatorButton({
         return () => window.removeEventListener('resize', checkScreenSize);
     }, []);
     
-    console.log('isOpen', isOpen);
-
     return (
         <button className={`${styles.calculatorButton} ${className}`}
         onClick={handleClick}
@@ -90,12 +88,23 @@ export function Icon ({ className, icon }) {
 function Accordion ({ isOpen, description, linkText }) {
     const contentRef = useRef(null);
     const [contentHeight, setContentHeight] = useState(0);
-
-    useEffect(() => {
+    
+    const updateContentHeight = useCallback(() => {
         if (contentRef.current) {
             setContentHeight(contentRef.current.scrollHeight);
         }
-    }, [description, linkText]);
+    }, []);
+
+    useEffect(() => {
+        updateContentHeight();
+        window.addEventListener('resize', updateContentHeight);
+
+        return () => window.removeEventListener('resize', updateContentHeight);
+    }, [updateContentHeight]);
+
+    useEffect(() => {
+        updateContentHeight();
+    }, [description, linkText, updateContentHeight]);
 
     return (
         <div className={styles.accordionContainer}>
