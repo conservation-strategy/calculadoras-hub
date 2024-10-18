@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useCallback, useState, useEffect, useRef } from 'react';
 
 const DESKTOP_BREAKPOINT = 1025;
+// const TABLET_BREAKPOINT = 744;
 
 export function CalculatorButton({ 
     className, 
@@ -61,8 +62,8 @@ export function CalculatorButton({
                     <div className={styles.description}>
                         {description}
                     </div>
-                </div>
-                <div className={styles.hiddenText}>{linkText}</div>
+                    <a className={`${styles.hiddenText} ${styles.link}`}>{linkText}</a>
+                </div>                
             </div>
         </button>
     )
