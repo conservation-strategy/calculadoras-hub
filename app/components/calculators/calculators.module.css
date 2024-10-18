@@ -226,6 +226,7 @@
 }
 .title {
     font-size: clamp(1.5rem, 1.3317rem + 0.6536vw, 1.75rem);
+    text-wrap: balance;
     /* text-transform: capitalize; */
 }
 /* .description {
