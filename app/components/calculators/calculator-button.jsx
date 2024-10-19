@@ -54,7 +54,7 @@ export function CalculatorButton({
             <div className={styles.mobile}>
                 <Accordion isOpen={isOpen} description={description} linkText={linkText} href={href}/>
             </div>
-            <div className={styles.desktop}>
+            <div className={styles.tabletUp}>
                 <div className={styles.textContainer}>
                     <div className={`${styles.title} ${doppio_one.className}`}>
                         {title}
@@ -62,8 +62,18 @@ export function CalculatorButton({
                     <div className={styles.description}>
                         {description}
                     </div>
-                    <a className={`${styles.hiddenText} ${styles.link}`}>{linkText}</a>
-                </div>                
+                    <a
+                    href={href}
+                    className={`${styles.tablet} ${styles.link}`}
+                    rel='noopener noreferrer'
+                    style={{marginTop: '16px'}}
+                    >
+                        {linkText}
+                    </a>
+                </div>
+                <div className={`${styles.hiddenText} ${styles.link}`}>
+                    {linkText}
+                </div>
             </div>
         </button>
     )

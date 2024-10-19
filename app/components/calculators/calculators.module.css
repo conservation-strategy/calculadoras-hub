@@ -9,6 +9,12 @@
 .desktop {
     display: none;
 }
+.tablet {
+    display: none;
+}
+.tabletUp {
+    display: none;
+}
 .mobile {
     display: block;
 }
@@ -34,7 +40,10 @@
     .mobile {
         display: none;
     }
-    .desktop {
+    .tablet{
+        display: block;
+    }
+    .tabletUp {
         display: block;
         width: 40%;
     }
@@ -55,32 +64,38 @@
         flex-direction: row;
         height: 100%;
         /* height: calc(100vh - 48px - 133px); */
-        min-height: calc(738px + 48px + 4px);
+        /* min-height: calc(738px + 48px + 4px); */
         max-width: var(--max-width-content);
         justify-content: center;
         padding: 24px;
         gap: clamp(0.5625rem, -0.8405rem + 3.0172vw, 1.875rem); /* 9 -> 30px */
     }
-    .desktop {
+    .tablet {
+        display: none;
+    }
+    .tabletUp {
         width: 100%;
     }
     .mobile {
         display: none;
     }
-}
+    .desktop {
+        display: block;
+    }
 
-
-@media(min-width: 1025px) {
     .calculatorButton {
         width: 33%;
         max-width: 395px;
         max-height: none;
-        /* padding: 36 -> 80px  24 -> 48px*/
+        /* padding 36 -> 80px  24 -> 48px*/
         padding: clamp(2.25rem, -0.6897rem + 6.3218vw, 5rem) clamp(1.5rem, -0.1034rem + 3.4483vw, 3rem);
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: clamp(0.875rem, -0.8621rem + 3.7356vw, 2.5rem); /* 14 -> 36px*/
+        justify-content: start;
+        gap: 24px;
+        /* gap: clamp(0.875rem, -0.8621rem + 3.7356vw, 2.5rem);  */
+        /* 14 -> 36px*/
         margin: 2px;
         transition: all 250ms ease-in-out;
         position: relative;
@@ -222,6 +237,7 @@
     .textContainer {
         color: inherit;
         gap: 12px;
+        max-height: 294px;
     }
 }
 .title {
@@ -276,15 +292,10 @@
 
 .hiddenText { 
     width: fit-content;
-    /* position: absolute; */
-    margin-top: 16px;
-    /* opacity: 0.87; */
-    /* text-decoration: underline; */
-    /* font-size: 24px; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    margin: auto;
 }
-@media(min-width: 1025px) {
-    .hiddenText {
-        margin: auto;
-        margin-top: 24px;
-    }
-}
+
