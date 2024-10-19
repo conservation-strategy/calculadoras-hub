@@ -2,6 +2,7 @@
 import styles from './calculators.module.css';
 import { useLanguage } from '@/app/context/provider';
 import { CalculatorButton, Icon } from './calculator-button';
+import { getUTMLink, MINING, INDIGENOUS, DEFORESTATION } from '@/app/utils';
 
 const circleBackground = {
     mining: 'rgba(var(--lightgold-rgb), 0.6)',
@@ -10,7 +11,7 @@ const circleBackground = {
 }
 
 export default function Calculators () {
-    const { content } = useLanguage();
+    const { content, language } = useLanguage();
     const { calculators } = content;
 
     return (
@@ -21,7 +22,7 @@ export default function Calculators () {
             icon={<Icon className={styles.miningIcon} icon='/assets/garimpo.svg' />}
             title={calculators.mining.title}
             description={calculators.mining.description}
-            href={'https://miningcalculator.conservation-strategy.org/'}
+            href={getUTMLink(language, MINING)}
             linkText={calculators.link}
             />
             <CalculatorButton
@@ -30,7 +31,7 @@ export default function Calculators () {
             icon={<Icon className={styles.indigenousIcon} icon='/assets/indigena.svg' />}
             title={calculators.indigenous.title}
             description={calculators.indigenous.description}
-            href={'https://calculadoraindigena.com.br/home'}
+            href={getUTMLink(language, INDIGENOUS)}
             linkText={calculators.link}
             />
             <CalculatorButton
@@ -39,7 +40,7 @@ export default function Calculators () {
             icon={<Icon className={styles.deforestationIcon} icon='/assets/desmatamento.svg' />}
             title={calculators.deforestation.title}
             description={calculators.deforestation.description}
-            href={'https://deforestationcalculator.conservation-strategy.org/'}
+            href={getUTMLink(language, DEFORESTATION)}
             linkText={calculators.link}
             />            
         </div>
