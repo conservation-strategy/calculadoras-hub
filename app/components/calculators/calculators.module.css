@@ -62,9 +62,12 @@
 @media(min-width: 1025px) {
     .calculators {
         flex-direction: row;
-        height: 100%;
-        /* height: calc(100vh - 48px - 133px); */
-        /* min-height: calc(738px + 48px + 4px); */
+        /* height: 100%; */
+        /* height: calc(100vh - 48px - 121px);  */
+        /* 100vh - padding - nav */
+        /* min-height: calc(clamp(38.5rem, 28.003rem + 16.3855vw, 42.75rem) + 48px); */
+        /*screen(1025 -> 1440): 546 + padding -> 777px + padding*/
+        /*max-heigth 668 -> */
         max-width: var(--max-width-content);
         justify-content: center;
         padding: 24px;
