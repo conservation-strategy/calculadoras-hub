@@ -257,6 +257,16 @@
 .description {
     font-size: 20px;
 }
+
+.hiddenText {
+    display: none;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    margin: auto;
+}
 @media(min-width:744px) {
     .link,
     .description {
@@ -278,6 +288,9 @@
     .description {
         font-size:  clamp(0.875rem, 0.3405rem + 1.1494vw, 1.375rem);
     }
+    .hiddenText {
+        display: block;
+    }
 }
 
 @media(max-width: 430px) {
@@ -290,12 +303,4 @@
     }
 }
 
-.hiddenText { 
-    width: fit-content;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 32px;
-    margin: auto;
-}
 
