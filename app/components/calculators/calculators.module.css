@@ -114,19 +114,29 @@
 
 .deforestation {
     background-color: var(--darkgreen);
-    background-image: url('/assets/fundo_desmatamento.png');
+    background-image: image-set(
+        url('/assets/fundo_desmatamento.webp') type('image/webp'),
+        url('/assets/fundo_desmatamento.png') type("image/png")
+    );
     background-size: cover;
 }
 .mining {
     background-color: var(--darkgold);
-    background-image: url('/assets/fundo_mineração.png');
+    background-image: image-set(
+        url('/assets/fundo_mineracao.webp') type('image/webp'),
+        url('/assets/fundo_mineracao.png') type("image/png")
+    );
     background-size: cover;
-    background-position-y: 10%;
+    background-position-y: -80px;
 }
 .indigenous {
     background-color: var(--darkred);
-    background-image: url('/assets/fundo_indígena.png');
+    background-image: image-set(
+        url('/assets/fundo_indigena.webp') type('image/webp'),
+        url('/assets/fundo_indigena.png') type("image/png")
+    );
     background-size: cover;
+    background-position-y: -186px;
 }
 
 .accordionContainer {
@@ -228,6 +238,10 @@
 
 
 @media(min-width: 1025px) {
+    .mining,
+    .indigenous {
+        background-position-y: top;
+    }
     .deforestation:hover,
     .indigenous:hover,
     .mining:hover{
