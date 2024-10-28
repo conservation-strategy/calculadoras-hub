@@ -43,7 +43,7 @@
 .subHeading {
     font-size: var(--step-2);
     line-height: 1.5;
-    text-wrap: wrap;
+    white-space: normal;
     letter-spacing: .08em;
 }
 .subHeading.marginLeft {
@@ -68,6 +68,10 @@
     .headingContainer {
         align-items: start;
         text-align: left;
+    }
+    .subHeading {
+        white-space: normal;
+        text-wrap: normal;
     }
 }
 
@@ -131,7 +135,8 @@
 
 @media(max-width: 530px) {
     .subHeading {
-        text-wrap:wrap;
+        white-space: normal;
+        /* text-wrap:wrap; */
     }
     .letterSpacePT_1,
     .letterSpacePT_2,
@@ -151,7 +156,7 @@
         font-size: 70px;
     }
     .subHeading {
-        font-size: 19px;
+        font-size: 20px;
     }
     .fontSizePT_1 {
         font-size: 60px;
