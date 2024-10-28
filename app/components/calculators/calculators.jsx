@@ -24,6 +24,7 @@ export default function Calculators () {
             description={calculators.mining.description}
             href={getUTMLink(language, MINING)}
             linkText={calculators.link}
+            titleWrap={'balance'}
             />
             <CalculatorButton
             className={styles.indigenous}
@@ -33,6 +34,7 @@ export default function Calculators () {
             description={calculators.indigenous.description}
             href={getUTMLink(language, INDIGENOUS)}
             linkText={calculators.link}
+            titleWrap={'pretty'}
             />
             <CalculatorButton
             className={styles.deforestation}
@@ -42,6 +44,7 @@ export default function Calculators () {
             description={calculators.deforestation.description}
             href={getUTMLink(language, DEFORESTATION)}
             linkText={calculators.link}
+            titleWrap={'pretty'}
             />            
         </div>
 

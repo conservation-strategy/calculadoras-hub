@@ -15,7 +15,8 @@ export function CalculatorButton({
     title, 
     description,
     linkText,
-    href
+    href,
+    titleWrap,
 }) {
     const [isDesktop, setIsDesktop] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +51,7 @@ export function CalculatorButton({
                     {icon}
                 </div>
                 <div className={`${styles.title} ${styles.mobile} ${doppio_one.className}`}
-                style={language === SPANISH ? { textWrap: 'pretty'} : { textWrap: 'balance' }}
+                style={{ textWrap: titleWrap}}
                 >
                     {title}
                 </div>
