@@ -71,7 +71,7 @@
     }
     .subHeading {
         white-space: normal;
-        text-wrap: normal;
+        text-wrap: wrap;
     }
 }
 

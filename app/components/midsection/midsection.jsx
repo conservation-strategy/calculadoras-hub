@@ -35,7 +35,7 @@ export default function MidSection () {
                                 {' '}
                                 <span className={styles.letterSpacePT_3}>de decisão</span>
                                 </span>
-                            : <span>Tools to support decision making</span>
+                            : <span>Tools to support decision-making</span>
                     }
                 </div>
                 <div className={`${styles.subHeading} ${language !== ENGLISH ? styles.marginLeft : '' }`}>
