@@ -43,7 +43,7 @@
 .subHeading {
     font-size: var(--step-2);
     line-height: 1.5;
-    text-wrap: pretty;
+    text-wrap: wrap;
     letter-spacing: .08em;
 }
 .subHeading.marginLeft {
@@ -131,7 +131,7 @@
 
 @media(max-width: 530px) {
     .subHeading {
-        text-wrap: pretty;
+        text-wrap:wrap;
     }
     .letterSpacePT_1,
     .letterSpacePT_2,
