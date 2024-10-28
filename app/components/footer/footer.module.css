@@ -73,7 +73,8 @@
     width: 100vw;
     height: 2px;
     background-color: #000000;
-    margin-block: 12px;
+    margin-top: 12px;
+    margin-bottom: 4px;
 }
 @media(max-width: 1024px) {
     .footnote {
