@@ -1,4 +1,5 @@
 'use client'
+import { SPANISH, useLanguage } from '@/app/context/provider';
 import styles from './calculators.module.css';
 import { doppio_one } from '@/app/fonts';
 import Image from 'next/image';
@@ -18,6 +19,7 @@ export function CalculatorButton({
 }) {
     const [isDesktop, setIsDesktop] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const { language } = useLanguage();
     
     const handleClick = useCallback(() => {
         if(isDesktop) {
@@ -47,7 +49,9 @@ export function CalculatorButton({
                 >
                     {icon}
                 </div>
-                <div className={`${styles.title} ${styles.mobile} ${doppio_one.className}`}>
+                <div className={`${styles.title} ${styles.mobile} ${doppio_one.className}`}
+                style={language === SPANISH ? { textWrap: 'pretty'} : { textWrap: 'balance' }}
+                >
                     {title}
                 </div>
             </div>

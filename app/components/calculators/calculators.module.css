@@ -26,9 +26,15 @@
     align-items: center;
     gap: 24px;
     text-align: left;
-    padding: 40px 32px 16px;
+    padding: 40px 20px 16px 32px;
     color: #ffffff;
     font-family: inherit;
+}
+
+@media(max-width: 394px) {
+    .calculatorButton {
+        padding-right: 16px;
+    }
 }
 
 @media (min-width: 430px) {
@@ -155,12 +161,19 @@
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-    padding: 24px;
+    padding: 22px 54px 24px 40px;
     font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+@media(max-width: 390px) {
+    .accordion {
+        padding-top: 16px;
+        padding-bottom: 18px;
+    }
 }
 
 .accordion.open {
@@ -193,7 +206,7 @@
 
 .circle {
     aspect-ratio: 1;
-    width: 50%;
+    width: 38%;
     max-width: 240px;
     border-radius: 50%;
     display: flex;
@@ -259,8 +272,6 @@
 }
 .title {
     font-size: clamp(1.5rem, 1.3317rem + 0.6536vw, 1.75rem);
-    text-wrap: balance;
-    /* text-transform: capitalize; */
 }
 /* .description {
     font-size: 24px;
@@ -313,11 +324,37 @@
 @media(max-width: 430px) {
     .link,
     .description {
-        font-size: 20px;
+        font-size: 22px;
     }
     .title {
-        font-size: 22px
+        font-size: 23px
     }
 }
 
+@media(max-width: 390px) {
+    .link,
+    .description {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 21px;
+    }
+}
 
+@media(max-width: 364px) {
+    .link,
+    .description {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 340px) {
+    .link,
+    .description,
+    .title {
+        font-size: 17px;
+    }
+}
