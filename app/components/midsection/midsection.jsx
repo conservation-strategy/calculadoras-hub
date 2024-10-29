@@ -38,7 +38,7 @@ export default function MidSection () {
                             : <span>Tools to support decision-making</span>
                     }
                 </div>
-                <div className={`${styles.subHeading} ${language !== ENGLISH ? styles.marginLeft : '' }`}>
+                <div className={`${styles.subHeading} ${language !== ENGLISH ? styles.marginLeft : styles.english }`}>
                     {midsection.subHeading}
                 </div>
             </div>
