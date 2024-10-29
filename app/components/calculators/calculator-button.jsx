@@ -70,6 +70,7 @@ export function CalculatorButton({
                     <a
                     href={href}
                     className={`${styles.tablet} ${styles.link}`}
+                    target='_blank'
                     rel='noopener noreferrer'
                     style={{marginTop: '16px'}}
                     >
