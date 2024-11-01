@@ -39,7 +39,7 @@ export default function MidSection () {
                     }
                 </div>
                 <div className={
-                    `${styles.subHeading} ${language !== ENGLISH ? styles.marginLeft : styles.english } ${language !== ENGLISH ? styles.translation : ''}`
+                    `${styles.subHeading} ${language !== ENGLISH ? styles.marginLeft : styles.english } ${language !== ENGLISH ? styles.notEnglish : ''}`
                     }>
                     {midsection.subHeading}
                 </div>
