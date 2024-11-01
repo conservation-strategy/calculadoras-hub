@@ -308,3 +308,8 @@
         transform: translateX(-6%);
     }
 }
+@media(max-width: 430px) {
+    .displayContainer{
+        padding-top: 0
+    }
+}
