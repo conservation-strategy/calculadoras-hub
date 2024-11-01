@@ -51,33 +51,6 @@
     margin-left: 10px;
 }
 
-@media(max-width: 890px) {
-    .headingContainer.translation {
-        padding: 0 2.5rem 0 clamp(2.625rem, 1.6553rem + 3.7657vw, 3.75rem);
-    }
-    .subHeading {
-        max-width: 40ch;
-    }
-}
-@media(max-width: 760px ) {
-    .headingContainer{
-        padding: 0px 60px;
-    }
-}
-
-@media(max-width: 640px) {
-    .headingContainer {
-        align-items: start;
-        text-align: left;
-    }
-    .subHeading {
-        max-width: 37ch;
-    }
-    .subHeading.english {
-        max-width: 29ch;
-    }
-}
-
 .fontSizePT_1 {
     font-size: inherit;
 }
@@ -118,12 +91,33 @@
     }
 }
 
+@media(max-width: 890px) {
+    .headingContainer.translation {
+        padding: 0 2.5rem 0 clamp(2.625rem, 1.6553rem + 3.7657vw, 3.75rem);
+    }
+    .subHeading {
+        max-width: 40ch;
+    }
+}
+@media(max-width: 760px ) {
+    .headingContainer{
+        padding: 0px 60px;
+    }
+}
+
+
 @media (max-width:680px) {
     .heading {
         line-height: 80px;
     }
+    .subHeading {
+        max-width: 37ch;
+    }
     .translation {
         font-size: clamp(3.9375rem, 3.0728rem + 3.3582vw, 4.5rem);
+    }
+    .letterSpaceES_1{
+        font-size: calc(0.945*1em);
     }
     .letterSpaceES_1,
     .letterSpaceES_4 {
@@ -134,6 +128,17 @@
         letter-spacing: -.09em;
     }
 
+}
+
+
+@media(max-width: 640px) {
+    .headingContainer {
+        align-items: start;
+        text-align: left;
+    }
+    .subHeading.english {
+        max-width: 29ch;
+    }
 }
 
 @media(max-width: 530px) {
@@ -178,6 +183,9 @@
         max-width: 29ch;
     }
 }
+.heading.translation {
+    cursor: auto;
+}
 @media (max-width: 376px) {
     .headingContainer {
         padding-left: 32px;
@@ -190,6 +198,10 @@
     }
     .subHeading{
         font-size: 19px;
+    }
+    .subHeading.translation {
+        font-size: 18px;
+        max-width: 28ch;
     }
     .title {
         font-size: 15px;
@@ -207,6 +219,8 @@
         letter-spacing: -0.095em;
     }
 }
+/* titulos acima*/
+/* imagens abaixo*/
 
 .displayContainer {
     width: 100%;
