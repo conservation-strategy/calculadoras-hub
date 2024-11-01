@@ -55,6 +55,11 @@
         width: 80%;
     }
 }
+@media(max-width: 396px) {
+    .frame {
+        padding: 30px
+    }
+}
 .quote {
     font-style: italic;
     font-size: var(--h2);
