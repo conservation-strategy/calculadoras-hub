@@ -79,13 +79,13 @@ const Socials = () => {
                     />
                 </a>
                 <a
-                href='https://twitter.com/numbers4nature'
+                href='https://bsky.app/profile/numbers4nature.bsky.social'
                 target='_blank'
                 rel='noopener noreferrer'
                 >
                     <Image
-                    src={'/X-icon.svg'}
-                    alt='X icon'
+                    src={'/bsky_icon.svg'}
+                    alt='bsky icon'
                     width={0}
                     height={0}
                     className={styles.icon}
